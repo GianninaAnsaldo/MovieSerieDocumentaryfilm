@@ -1,0 +1,16 @@
+<!-- app/views/movies/new.html.erb -->
+<h1>Nuevo Documental</h1>
+<%= form_with model: @documentary, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :synopsis %>
+  <%= form.text_field :synopsis %><br>
+
+  <%= form.label :director %>
+  <%= form.text_field :director %><br><br>
+
+  <%= form.submit 'Crear Documental' %>
+<% end %>
+  <br>
+<%= link_to 'Volver', documentary_film_index_path %>

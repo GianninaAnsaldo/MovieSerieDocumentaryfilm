@@ -1,0 +1,15 @@
+<h1>Nueva Serie</h1>
+<%= form_with model: @series, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :synopsis %>
+  <%= form.text_field :synopsis %><br>
+
+  <%= form.label :director %>
+  <%= form.text_field :director %><br><br>
+  
+  <%= form.submit 'Crear Serie' %>
+<% end %>
+  <br>
+<%= link_to 'Volver', serie_index_path %>

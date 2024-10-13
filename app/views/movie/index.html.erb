@@ -1,0 +1,10 @@
+<h1>Películas</h1>
+<ul>
+  <% @movies.each do |movie| %>
+    <p>Nombre: <%= movie.name %></p>
+    <p>Synopsis: <%= movie.synopsis %></p>
+    <p>Director: <%= movie.director %></p> 
+    <br>
+  <% end %>
+</ul>
+<%= link_to 'Nueva Película', new_movie_path %>

@@ -1,0 +1,11 @@
+<h1>Documentales</h1>
+
+<ul>
+  <% @documentaries.each do |documentary| %>
+    <p>Nombre: <%= documentary.name %></p>
+    <p>Synopsis: <%= documentary.synopsis %></p>
+    <p>Director: <%= documentary.director %></p> 
+    <br>
+  <% end %>
+</ul>
+<%= link_to 'Nuevo Documental', new_documentary_film_path %>

@@ -1,0 +1,16 @@
+<!-- app/views/movies/new.html.erb -->
+<h1>Nueva Película</h1>
+<%= form_with model: @movies, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :synopsis %>
+  <%= form.text_field :synopsis %><br>
+
+  <%= form.label :director %>
+  <%= form.text_field :director %><br><br>
+
+  <%= form.submit 'Crear Película' %>
+<% end %>
+  <br>
+<%= link_to 'Volver', movie_index_path %>
