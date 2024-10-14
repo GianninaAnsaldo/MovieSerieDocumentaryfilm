@@ -15,7 +15,6 @@ class MovieController < ApplicationController
   def new
     @movie = Movie.new
   end
-end
 
    private
 
@@ -23,4 +22,5 @@ end
   def movie_params
   params.require(:movie).permit(:name, :synopsis, :director)
   end
+end
 

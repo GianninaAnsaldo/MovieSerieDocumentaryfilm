@@ -15,7 +15,7 @@ class DocumentaryFilmController < ApplicationController
   def new
     @documetary = DocumentaryFilm.new
   end
-end
+
 
  
   private
@@ -23,3 +23,4 @@ end
   def documentary_params
     params.require(:documentary_film).permit(:name, :synopsis, :director)
   end
+end

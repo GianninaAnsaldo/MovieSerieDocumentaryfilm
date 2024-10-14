@@ -15,7 +15,7 @@ class SerieController < ApplicationController
   def new
     @serie = Serie.new
   end
-end
+
 
 
   private
@@ -23,3 +23,4 @@ end
   def serie_params
     params.require(:serie).permit(:name, :synopsis, :director)
   end
+end
